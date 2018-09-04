@@ -40,7 +40,7 @@ public class EmployeesUpdateServlet extends HttpServlet {
 		// session_idとsessionの取得
 		String _token = request.getParameter("_token");	// リクエストスコープ内のsession_id
 		HttpSession session = request.getSession(); 	// sessionの取得
-        int emp_id = (Integer)(session.getAttribute("employee_id"));
+        Integer emp_id = (Integer)(session.getAttribute("employee_id"));
         // 従業員情報の取得
 		String emp_code = request.getParameter("code");
 		String emp_name = request.getParameter("name");
