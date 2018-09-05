@@ -3,6 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <c:import url="/WEB-INF/views/layout/app.jsp">
+
 	<c:param name="content">
 		<c:choose>
 			<c:when test="${employee != null}">
@@ -47,5 +48,6 @@
 		</c:choose>
 
 		<p><a href="<c:url value='/employees/index' />">一覧に戻る</a></p>
+
 	</c:param>
 </c:import>
